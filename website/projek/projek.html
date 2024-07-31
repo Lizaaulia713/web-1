@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Website</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="projek.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+       .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #262840;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+       .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+       .header.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+       .header.navbar a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        
+       .content {
+            padding-top: 60px;
+        }
+
+        .content a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        
+       .film-poster {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        audio {
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Profil</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="/home/home.html" class="active">Home</a>
+            <a href="/projek/projek.html">Projek</a>
+            <a href="/Media/media.html">Media</a>
+        </nav>
+        <audio autoplay loop>
+            <source src="iu.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </header>
+
+    <div class="content">
+        <i><h1>REKOMENDASI FILM</h1></i>
+        
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Judul Film</th>
+                <th>Poster</th>
+                <th>Sinopsis</th>
+                <th>Link film</th>
+                <th>Tahun Rilis</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Live on</td>
+                <td><img src="Live_On-P1_l1agpr.jpg" alt="Live On" class="film-poster"></td>
+                <td>Drama Live On berfokus pada insiden yang menimpa Baek Ho Rang (Jung Da Bin). Dia adalah gadis paling populer di sekolah sekaligus bintang di media sosial. Semua orang ingin menjadi teman Baek Ho Rang dan setiap pria ingin memenangkan hatinya. Meski tampak sempurna, namun Baek Ho Rang sering kali merendahkan orang lain.</td>
+                <td><a href="https://youtu.be/Whokw_7PE7I?si=rMN4bRGxmlTOTLwQ">tontonan trailer</a></td>
+                <td>2020</td>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Raya and the last dragon</td>
+                <td><img src="Rayaa.jpg" alt="Raya and the last dragon" class="film-poster"></td>
+                <td>Dahulu kala, di dunia fantasi Kumandra, manusia dan naga hidup bersama secara harmonis. Namun, ketika monster jahat yang dikenal sebagai Druun mengancam daratan, para naga mengorbankan diri mereka untuk menyelamatkan umat manusia. Sekarang, 500 tahun kemudian, monster yang sama telah kembali, dan seorang prajurit hadir untuk mencari naga terakhir dan menghentikan Druun untuk selamanya.</td>
+                <td><a href="https://youtu.be/1VIZ89FEjYI?si=966jDOqFbgxEnjK9">tontonan trailer</a></td>
+                <td>2021</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>The sea beast</td>
+                    <td><img src="sea beast.jpeg" alt="The sea beast" class="film-poster"></td>
+                    <td>Film The Sea Beast menceritakan tentang seorang pemburu monster laut bernama Jacob Holland. Ia dikenal sebagai seorang kapten kapal yang gagah berani. Jacob Holland memiliki misi untuk menaklukkan dan membasmi hewan-hewan buas yang gentayangan di lautan.</td>
+                    <td><a href="https://youtu.be/P-E-IGQCsPo?si=5vIHUu1MI9R38Etc">tontonan trailer</a></td>
+                    <td>2022</td>
+                    </tr>
