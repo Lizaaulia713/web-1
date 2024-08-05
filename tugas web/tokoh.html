@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Website</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="style.css">
+  
+     <!-- INTERNAL CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #191f36;
+            color: #333;
+            font-size: 18px;
+        }
+
+        header, footer {
+            background-color: #191f36;
+            color: white;
+            text-align: center;
+            padding: 5em 0;
+            font-size: 20px;
+        }
+
+        #main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #bio, #movies, #photo {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            background-color: #262840;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .content {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: white;
+        }
+
+        #photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        @media (min-width: 768px) {
+            #main-content {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #bio, #movies, #photo {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Profil</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="home.html" class="active">Home</a>
+            <a href="film.html">Film</a>
+            <a href="tokoh.html">Tokoh</a>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Tokoh</h1>
+    </header>
+
+    <main id="main-content">
+      <section id="photo">
+        <h2 class="section-title">Foto</h2>
+        <div class="content">
+            <img src="dew.jpg" alt="Foto Aktor/Aktris">
+        </div>
+    </section>
+
+        <section id="bio">
+            <h2 class="section-title">Biodata</h2>
+            <div class="content">
+                <p><strong>Nama:</strong>Dew Jirawat Sutivanichsak </p>
+                <p><strong>Tanggal Lahir:</strong> 30 Oktober 2000</p>
+                <p><strong>Tempat Lahir:</strong>Bangkok, Thailand</p>
+                <p><strong>Karir:</strong> Dew pertama kali memasuki industri hiburan sebagai model, dan pada tahun 2021, ia melakukan debut aktingnya di serial F4 Thailand: Boys Over Flowers dan berhasil memikat hati penggemar drama Thailand saat itu juga karena parasnya yang rupawan dan juga aktingnya yang menjanjikan.</p>
+            </div>
+        </section>
+
+        <section id="movies">
+            <h2 class="section-title">Film</h2>
+            <div class="content">
+                <p><strong>Judul Film:</strong> F4 Thailand: Boys Over Flowers </p>
+                <p><strong>Tahun Rilis:</strong> 2021</p>
+            </div>
+
+            <div class="content">
+                <p><strong>Judul Film:</strong> Magic of Zero</p>
+                <p><strong>Tahun Rilis:</strong> 2022</p>
+            </div>
+
+            <div class="content">
+              <p><strong>Judul Film:</strong> faceless love</p>
+              <p><strong>Tahun Rilis:</strong> 2023</p>
+            </div>
+
+            <div class="content">
+              <p><strong>Judul Film:</strong> Home school</p>
+              <p><strong>Tahun Rilis:</strong> 2023</p>
+            </div>
+
+            <div class="content">
+              <p><strong>Judul Film:</strong> A Love So Beautiful</p>
+              <p><strong>Tahun Rilis:</strong> 2024</p>
+            </div>
+            <audio controls>
+                <source src="deww.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
+              
+
+        </section>
+    </main>
+  
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2024 Tugas Website
+    </footer>
+</body>
+</html>
